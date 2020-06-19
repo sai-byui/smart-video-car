@@ -121,7 +121,7 @@ def loop():
 				video_dir.calibrate(offset_x, offset_y)
 			#----------------------------------------
 
-			#-------Turing calibration 2------
+			#-------Turning calibration 2------
 			elif data[0:7] == 'offset+':
 				offset = offset + int(data[7:])
 				print('Turning offset', offset)

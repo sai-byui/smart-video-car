@@ -7,7 +7,7 @@ import os
 top = Tk()   # Create a top window
 top.title('Raspberry Pi Smart Video Car Calibration')
 
-HOST = '10.60.15.20'    # Server(Raspberry Pi) IP address
+HOST = '10.60.15.17'    # Server(Raspberry Pi) IP address
 PORT = 21567
 BUFSIZ = 1024             # buffer size
 ADDR = (HOST, PORT)
@@ -60,7 +60,7 @@ def right_reverse(event):
 	tcpCliSock.send(right_cmd)
 #----------------------------------------
 
-#---------turing---------------
+#---------turning---------------
 def fineturn_left(event):
 	print('fineturn_left')
 	cmd = 'offset-1'.encode()
